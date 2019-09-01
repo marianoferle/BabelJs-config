@@ -1,15 +1,11 @@
 {
   "name": "babel_v1",
   "version": "1.0.0",
-  "babel": {
-    "presets":[],
-    "plugins":[]
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/babel src --out-dir lib --presets=@babel/env"
+    "build": "babel ./src --out-dir lib"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +14,9 @@
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/plugin-transform-arrow-functions": "^7.2.0",
-    "@babel/preset-env": "^7.5.5"
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-es2017": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4"
